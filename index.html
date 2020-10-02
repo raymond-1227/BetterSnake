@@ -1,0 +1,79 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BetterSnake</title>
+    <meta name="description"
+        content="A snake game, not just a canvas." />
+    <link id="favicon" rel="icon"
+        href="https://cdn.glitch.com/1def1d9f-99bd-4fb7-b85d-e69b3d8498a7%2Fimageedit_2_7506892252.jpg?v=1591466171607"
+        type="image/x-icon" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link
+        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <link rel="stylesheet"
+        href="style.css" />
+</head>
+
+<body text="black">
+    <header>
+        <h1 class="title">
+            BetterSnake
+        </h1>
+    </header>
+
+    <hr />
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+            width: 100%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <main class="content">
+        <p class="bold">A snake game,
+            not just a canvas.</p>
+
+        <p>
+            How to use it: Use any arrow
+            keys to start the game!
+        </p>
+
+        <canvas id="canvas"></canvas>
+        <script src="snake.js"></script>
+    </main>
+    <hr />
+    <footer class="content">
+        Powered by <a
+            href="https://pages.github.com">GitHub
+            Pages</a><br />
+        Redesigned by <a
+            href="https://raymond.wtf">Raymond
+            Hsu</a>
+    </footer>
+</body>
+
+</html>
