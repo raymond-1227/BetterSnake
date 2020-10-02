@@ -1,11 +1,11 @@
-const BG_COLOUR = '#231f20';
-const SNAKE_COLOUR = '#c2c2c2';
-const FOOD_COLOUR = '#e66916';
+const BG_COLOUR = '#f2f2f2';
+const SNAKE_COLOUR = '#3b3b3b';
+const FOOD_COLOUR = '#cf6679';
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = canvas.height =400;
+canvas.width = canvas.height = 500;
 
 const FR = 10;
 const S = 20;
@@ -14,14 +14,10 @@ const T = canvas.width / S;
 let pos, vel, food, snake;
 
 function init(){
-  pos = {x: 10, y: 10};
+  pos = {x: 0, y: 0};
   vel = {x: 0, y: 0};
 
-  snake = [
-    {x: 8, y: 10},
-    {x: 9, y: 10},
-    {x: 10, y: 10},
-  ]
+  snake = [{x: 0, y: 0}]
 
   randomFood();
 }
@@ -79,8 +75,20 @@ function gameLoop(){
   pos.x += vel.x;
   pos.y += vel.y;
 
-  if (pos.x < 0 || pos.x > T || pos.y < 0 || pos.y > T) {
-    init();
+  if (pos.x < 0) {
+    pos.x = T
+  }
+
+  if (pos.x > T) {
+    pos.x = 0
+  }
+
+  if (pos.y < 0) {
+    pos.y = T
+  }
+
+  if (pos.y > T) {
+    pos.y = 0
   }
 
   if (food.x === pos.x && food.y === pos.y) {
@@ -91,11 +99,6 @@ function gameLoop(){
   }
 
   if (vel.x || vel.y) {
-    for (let cell of snake) {
-      if (cell.x === pos.x && cell.y === pos.y) {
-        return init();
-      }
-    }
     snake.push({...pos});
     snake.shift();
   }

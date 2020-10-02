@@ -1,0 +1,54 @@
+/* styles */
+/* called by your view template*/
+
+html {
+    font-size: 20px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Gotham", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+  }
+  
+  h1,
+  h2 {
+    font-family: "Gotham";
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  p {
+    max-width: 600px;
+  }
+  
+  footer {
+    margin: auto;
+    margin-top: 50px;
+    padding-top: 25px;
+  }
+  
+  a, a:visited {
+    color: #39ace7;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #7fdbff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
