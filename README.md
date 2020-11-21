@@ -1,9 +1,5 @@
 # Better Snake
 
-Wow, I just made it worse! YAY!!!!!111!!!
-
----
-
 ## About
 The original one is pretty nice, but I'm making the game with a nice looking HTML site, and making it endless. (the original one could end if you collide into the walls or the snake itself)
 
