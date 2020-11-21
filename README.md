@@ -5,7 +5,7 @@ The original one is pretty nice, but I'm making the game with a nice looking HTM
 
 ## Play the Game
 
-Please [click here](https://raymondlol.me/better-snake) to start your journey!
+Please [click here](https://raymond-1227.github.io/better-snake) to start your journey!
 
 ## Source Code
 
