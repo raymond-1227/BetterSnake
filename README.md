@@ -7,10 +7,6 @@ The original one is pretty nice, but I'm making the game with a nice looking HTM
 
 Please [click here](https://raymond-1227.github.io/better-snake) to start your journey!
 
-## Source Code
-
-Please [click here](https://github.com/raymond-1227/better-snake) for the source code.
-
 ## Troubleshooting
   - The snake is gone
     - Try doing [Up/Down] or [Left/Right], it should appear since the snake was outside of the box.
