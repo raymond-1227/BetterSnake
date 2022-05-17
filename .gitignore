@@ -21,3 +21,5 @@ ehthumbs.db
 # Extension Artifacts
 .web-extension-id
 web-ext-Artifacts
+.DS_Store
+.DS_Store
